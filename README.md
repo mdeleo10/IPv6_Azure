@@ -24,4 +24,6 @@ Infrastructure
 
 
 Platform as a Service
+| PaaS  | Supported |
+| ------------- | ------------- |
 | AKS | ?? |
