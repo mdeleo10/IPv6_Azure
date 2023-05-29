@@ -1,12 +1,13 @@
 # IPv6 Support in Azure
 What services support IPv6
 
-Azure Portal - Dual Stacked?
-Azure CLI - No ?
-
-Pricing
+## Pricing
 
 There's no charge to use Public IPv6 Addresses or Public IPv6 Prefixes. Associated resources and bandwidth are charged at the same rates as IPv4.
+
+## Azure Portal - Dual Stacked?
+Azure CLI - No ?
+
 
 Infrastructure (IaaS)
 
