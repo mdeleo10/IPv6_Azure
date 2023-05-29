@@ -6,22 +6,22 @@ Azure CLI - No ?
 
 Infrastructure
 
-| Infrastructure  | Supported |
-| ------------- | ------------- |
-| VNET (Virtual Networks) | Yes, Dual Stack  |
-| Subnets | Yes, Dual Stack |
-| NAT Gateway | Yes? |
-| Public IP | Yes |
-| NIC  | Yes, Dual Stack (must have IPv4) |
-| Private Endpoints | No |
-| Private Links | No |
-| VPN Gateway | No |
-| ExpressRoute Gateway | Yes, Dual Stack |
-| Internal Load Balancer | |
-| External Load Balancer | |
-| Application Gateway | No |
-| FrontEnd | ??? |
-| DDOS | ??? |
+| Infrastructure  | Supported | Reference |
+| ------------- | ------------- | ------------- | 
+| VNET (Virtual Networks) | Yes, Dual Stack  | |
+| Subnets | Yes, Dual Stack | |
+| NAT Gateway | Yes? | |
+| Public IP | Yes | | (via NAT GW)
+| NIC  | Yes, Dual Stack (must have IPv4) | |
+| Private Endpoints | No | |
+| Private Links | No | |
+| VPN Gateway | No | |
+| ExpressRoute Gateway | Yes, Dual Stack | |
+| Internal Load Balancer | | |
+| External Load Balancer | | |
+| Application Gateway | No | |
+| FrontEnd | ??? | |
+| DDOS | ??? | |
 
 
 Platform as a Service
