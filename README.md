@@ -8,8 +8,11 @@ Infrastructure (IaaS)
 
 | Service  | Supported | Reference |
 | ------------- | ------------- | ------------- | 
-| VNET (Virtual Networks) | Yes, Dual Stack  | |
-| Subnets | Yes, Dual Stack | |
+| VNET (Virtual Networks) | Yes, Dual Stack  | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
+| Subnets | Yes, Dual Stack and must be exactly /64 | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
+| Network Security Groups (NSG) | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
+| User Defined Routes (UDR) | yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
+| DHCPv6 for Linux VMs (some need manual config) | Yes | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-ipv6-for-linux?tabs=ubuntu | 
 | NAT Gateway | Yes? | |
 | Public IP | Yes | | (via NAT GW)
 | NIC  | Yes, Dual Stack (must have IPv4) | |
@@ -18,7 +21,7 @@ Infrastructure (IaaS)
 | VPN Gateway | No | |
 | ExpressRoute Gateway | Yes, Dual Stack | |
 | Internal Load Balancer | | |
-| External Load Balancer | | |
+| Standard Load Balancer | Yes | https://learn.microsoft.com/en-us/azure/load-balancer/virtual-network-ipv4-ipv6-dual-stack-standard-load-balancer-powershell |
 | Application Gateway | No | |
 | FrontEnd | ??? | |
 | DDOS | ??? | |
