@@ -11,6 +11,7 @@ Infrastructure
 | VNET (Virtual Networks) | Yes, Dual Stack  |
 | Subnets | Yes, Dual Stack |
 | NAT Gateway | Yes? |
+| Public IP | Yes |
 | NIC  | Yes, Dual Stack (must have IPv4) |
 | Private Endpoints | No |
 | Private Links | No |
@@ -26,4 +27,6 @@ Infrastructure
 Platform as a Service
 | PaaS  | Supported |
 | ------------- | ------------- |
+| Azure Active Directory | Yes | See https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support |
+| Azure DNS | 
 | AKS | ?? |
