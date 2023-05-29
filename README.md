@@ -31,7 +31,7 @@ Infrastructure (IaaS)
 | Standard Public Load Balancer | Yes | https://learn.microsoft.com/en-us/azure/load-balancer/virtual-network-ipv4-ipv6-dual-stack-standard-load-balancer-powershell |
 | Application Gateway | No | |
 | FrontEnd | ??? | |
-| DDOS | ??? | |
+| DDOS | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | IPv6 Troubleshooting and Diagnostics are available with load balancer metrics/alerting and Network Watcher features such as packet capture, NSG flow logs, connection troubleshooting and connection monitoring. | Yes | |
 
 Limitations, see https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview
@@ -54,7 +54,7 @@ Platform as a Service (PaaS
 | Service  | Supported | Reference |
 | ------------- | ------------- | ------------- | 
 | Azure Active Directory | Yes | See https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support |
-| Azure DNS | | |
+| Azure DNS - Azure DNS support for IPv6 (AAAA) records, no inverse resolution* | | |
 | AKS | ?? | |
 | Managed SQL | ?? | |
 | App Services | ?? | |
