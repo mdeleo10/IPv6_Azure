@@ -4,9 +4,9 @@ What services support IPv6
 Azure Portal - Dual Stacked?
 Azure CLI - No ?
 
-Infrastructure
+Infrastructure (IaaS)
 
-| Infrastructure  | Supported | Reference |
+| Service  | Supported | Reference |
 | ------------- | ------------- | ------------- | 
 | VNET (Virtual Networks) | Yes, Dual Stack  | |
 | Subnets | Yes, Dual Stack | |
@@ -24,8 +24,8 @@ Infrastructure
 | DDOS | ??? | |
 
 
-Platform as a Service
-| PaaS  | Supported | Reference |
+Platform as a Service (PaaS
+| Service  | Supported | Reference |
 | ------------- | ------------- | ------------- | 
 | Azure Active Directory | Yes | See https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support |
 | Azure DNS | | |
