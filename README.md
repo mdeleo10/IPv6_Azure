@@ -11,8 +11,8 @@ Azure CLI - No ?
 
 Infrastructure (IaaS)
 
-| Service  | Supported | Reference |
-| ------------- | ------------- | ------------- | 
+| Service  | Supported | Reference | Notes | 
+| ------------- | ------------- | ------------- | ------------- | 
 | Azure Public IP address prefixes | Yes - Used for VMs, Standard Load Balancers, Azure Firewall, VPN Gw* | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-address-prefix |
 | VNET (Virtual Networks) | Yes, Dual Stack  | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | Subnets | Yes, Dual Stack and must be exactly /64 | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
@@ -29,7 +29,7 @@ Infrastructure (IaaS)
 | ExpressRoute Gateway | Yes, Dual Stack | |
 | Standard Internal Load Balancer | Yes | https://learn.microsoft.com/en-us/azure/load-balancer/ipv6-dual-stack-standard-internal-load-balancer-powershell |
 | Standard Public Load Balancer | Yes | https://learn.microsoft.com/en-us/azure/load-balancer/virtual-network-ipv4-ipv6-dual-stack-standard-load-balancer-powershell |
-| Application Gateway | No | |
+| Application Gateway v2 | No | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview | Application Gateway v2 doesn't currently support IPv6. It can operate in a dual stack virtual network using only IPv4, but the gateway subnet must be IPv4-only. Application Gateway v1 doesn't support dual stack virtual networks. |
 | FrontEnd | ??? | |
 | DDOS | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | IPv6 Troubleshooting and Diagnostics are available with load balancer metrics/alerting and Network Watcher features such as packet capture, NSG flow logs, connection troubleshooting and connection monitoring. | Yes | |
@@ -55,7 +55,7 @@ Platform as a Service (PaaS
 | ------------- | ------------- | ------------- | 
 | Azure Active Directory | Yes | See https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support |
 | Azure DNS - Azure DNS support for IPv6 (AAAA) records, no inverse resolution* | | |
-| AKS | ?? | |
+| AKS | No | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | Managed SQL | ?? | |
 | App Services | ?? | |
 
