@@ -21,7 +21,7 @@ Infrastructure
 | Application Gateway | No |
 | FrontEnd | ??? |
 | DDOS | ??? |
-| 
+
 
 Platform as a Service
-| AKS | |
+| AKS | ?? |
