@@ -25,8 +25,8 @@ Infrastructure
 
 
 Platform as a Service
-| PaaS  | Supported |
-| ------------- | ------------- |
+| PaaS  | Supported | |
+| ------------- | ------------- | ------------- | 
 | Azure Active Directory | Yes | See https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support |
 | Azure DNS | 
 | AKS | ?? |
