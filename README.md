@@ -17,12 +17,14 @@ Infrastructure (IaaS)
 | VNET (Virtual Networks) | Yes, Dual Stack  | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | Subnets | Yes, Dual Stack and must be exactly /64 | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | VNET peering | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview | 
-| Network Security Groups (NSG) | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
+| Azure Virtual WAN | No | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview | Azure Virtual WAN currently supports IPv4 traffic only. |
+| Network Security Groups (NSG) | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview | ICMPv6 isn't currently supported in Network Security Groups. |
 | User Defined Routes (UDR) | yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | DHCPv6 for Linux VMs (some need manual config) | Yes | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-ipv6-for-linux?tabs=ubuntu | 
 | NAT Gateway | Yes? | |
-| Public IP | Yes | | (via NAT GW)
+| Public IP | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses | support DNS Name Label | 
 | NIC  | Yes, Dual Stack (must have IPv4) | |
+| Azure Firewall | No | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview | Azure Firewall doesn't currently support IPv6. It can operate in a dual stack VNet using only IPv4, but the firewall subnet must be IPv4-only. |
 | Private Endpoints | No | |
 | Private Links | No | |
 | VPN Gateway | No | |
@@ -54,9 +56,14 @@ Platform as a Service (PaaS
 | Service  | Supported | Reference |
 | ------------- | ------------- | ------------- | 
 | Azure Active Directory | Yes | See https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support |
-| Azure DNS - Azure DNS support for IPv6 (AAAA) records, no inverse resolution* | | |
-| AKS | No | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
+| Azure DNS - Azure DNS support for IPv6 (AAAA) records, no inverse resolution* | | | Forward DNS for IPv6 is supported for Azure public DNS. Reverse DNS isn't supporte | 
+| AKS | Yes with limitations | [https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview](https://learn.microsoft.com/en-us/azure/aks/configure-kubenet-dual-stack?tabs=azure-cli%2Ckubectl) | See page for more details |
 | Managed SQL | ?? | |
 | App Services | ?? | |
 
+SaaS
+
+Microsoft Exchange Online (supports IPv6)
+Microsoft SharePoint Online (Can be enabled with IPv6 with a support request)
+Microsoft Teams (Only supports IPv4)
 
