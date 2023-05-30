@@ -5,9 +5,10 @@ Is there IPv6 support in Azure? Yes. Most Infrastructure as a Service, but not m
 
 There's **no charge** to use Public IPv6 Addresses or Public IPv6 Prefixes. Associated resources and bandwidth are charged at the same rates as IPv4.
 
-## Azure Portal - Dual Stacked?
-Azure CLI - No ?
+## Is the Azure Portal Dual Stacked?
+Yes, the https://portal.azure.com site is dual-stacked, https://portal.azure.us is not. But the Azure cli doesn't seem to support IPv6. Azure Powershell to be confirmed.
 
+ 
 
 ## Infrastructure (IaaS)
 
@@ -73,4 +74,5 @@ Creating a dual-stacked VM - Note that *INTERNAL* IPv6 NIC address is address-tr
 Microsoft Exchange Online (supports IPv6)
 Microsoft SharePoint Online (Can be enabled with IPv6 with a support request)
 Microsoft Teams (Only supports IPv4)
+https://learn.microsoft.com/en-us/microsoft-365/enterprise/ipv6-support?view=o365-worldwide
 
