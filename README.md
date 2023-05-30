@@ -9,7 +9,7 @@ There's **no charge** to use Public IPv6 Addresses or Public IPv6 Prefixes. Asso
 Azure CLI - No ?
 
 
-Infrastructure (IaaS)
+## Infrastructure (IaaS)
 
 | Service  | Supported | Reference | Notes | 
 | ------------- | ------------- | ------------- | ------------- | 
@@ -52,7 +52,7 @@ The current IPv6 for Azure Virtual Network release has the following limitations
 
 
 
-Platform as a Service (PaaS
+## Platform as a Service (PaaS)
 | Service  | Supported | Reference |
 | ------------- | ------------- | ------------- | 
 | Azure Active Directory | Yes | See https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support |
@@ -61,7 +61,7 @@ Platform as a Service (PaaS
 | Managed SQL | ?? | |
 | App Services | ?? | |
 
-SaaS
+## Software as a Service (SaaS)
 
 Microsoft Exchange Online (supports IPv6)
 Microsoft SharePoint Online (Can be enabled with IPv6 with a support request)
