@@ -1,5 +1,5 @@
 # IPv6 Support in Azure
-What services support IPv6
+Is there IPv6 support in Azure? Yes. Most Infrastructure as a Service, but not many Platform as a Service. 
 
 ## Pricing
 
@@ -50,7 +50,7 @@ The current IPv6 for Azure Virtual Network release has the following limitations
 * Azure Virtual WAN currently supports IPv4 traffic only.
 * Azure Firewall doesn't currently support IPv6. It can operate in a dual stack VNet using only IPv4, but the firewall subnet must be IPv4-only.
 
-
+Note: In my experience, deploying Marketplace solutions may not properly deploy on dual-stacked subnets.
 
 ## Platform as a Service (PaaS)
 | Service  | Supported | Reference |
