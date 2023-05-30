@@ -21,7 +21,7 @@ Azure CLI - No ?
 | Network Security Groups (NSG) | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview | ICMPv6 isn't currently supported in Network Security Groups. |
 | User Defined Routes (UDR) | yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | DHCPv6 for Linux VMs (some need manual config) | Yes | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-ipv6-for-linux?tabs=ubuntu | 
-| NAT Gateway | Yes? | |
+| NAT Gateway | No | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-nat-gateway | Public IPv6 address and public IPv6 prefixes aren't supported on NAT gateways at this time. However, NAT gateways can be deployed on a dual stack virtual network subnet with IPv6 and IPv4 prefixes. For more information, see Troubleshoot Azure Virtual Network NAT connectivity. | 
 | Public IP | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses | support DNS Name Label | 
 | NIC  | Yes, Dual Stack (must have IPv4) | |
 | Azure Firewall | No | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview | Azure Firewall doesn't currently support IPv6. It can operate in a dual stack VNet using only IPv4, but the firewall subnet must be IPv4-only. |
@@ -33,6 +33,7 @@ Azure CLI - No ?
 | Standard Public Load Balancer | Yes | https://learn.microsoft.com/en-us/azure/load-balancer/virtual-network-ipv4-ipv6-dual-stack-standard-load-balancer-powershell |
 | Application Gateway v2 | No | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview | Application Gateway v2 doesn't currently support IPv6. It can operate in a dual stack virtual network using only IPv4, but the gateway subnet must be IPv4-only. Application Gateway v1 doesn't support dual stack virtual networks. |
 | FrontEnd | ??? | |
+| Bastion | No | | |
 | DDOS | Yes | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview |
 | IPv6 Troubleshooting and Diagnostics are available with load balancer metrics/alerting and Network Watcher features such as packet capture, NSG flow logs, connection troubleshooting and connection monitoring. | Yes | |
 
@@ -52,7 +53,11 @@ The current IPv6 for Azure Virtual Network release has the following limitations
 
 Note: In my experience, deploying Marketplace solutions may not properly deploy on dual-stacked subnets.
 
-Creating a dual-stacked VM with CLI - https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-vm-dual-stack-ipv6-cli . Note that *INTERNAL* IPv6 NIC address is address-translated to the Public IPv6 address.
+Creating a dual-stacked VM - Note that *INTERNAL* IPv6 NIC address is address-translated to the Public IPv6 address.
+- Azure Portal - https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-vm-dual-stack-ipv6-portal
+- Azure CLI - https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-vm-dual-stack-ipv6-cli 
+- Azure Powershell - https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-vm-dual-stack-ipv6-powershell 
+
 
 ## Platform as a Service (PaaS)
 | Service  | Supported | Reference |
