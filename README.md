@@ -54,7 +54,7 @@ The current IPv6 for Azure Virtual Network release has the following limitations
 
 Note: In my experience, deploying Marketplace solutions may not properly deploy on dual-stacked subnets.
 
-Creating a dual-stacked VM - Note that *INTERNAL* IPv6 NIC address is address-translated to the Public IPv6 address for inbound and outbound Internet access. Remember that NAT-GW is not support yet, so only one Public IP address is translated. If scalability is required, see Load Balancer as an option.
+Creating a dual-stacked VM - Note that *INTERNAL* IPv6 NIC address is address-translated to the Public IPv6 address for inbound and outbound Internet access. Remember that NAT-GW is not supported yet, so only one Public IP address is translated. If scalability is required, see Load Balancer as an option.
 - Azure Portal - https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-vm-dual-stack-ipv6-portal
 - Azure CLI - https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-vm-dual-stack-ipv6-cli 
 - Azure Powershell - https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-vm-dual-stack-ipv6-powershell 
