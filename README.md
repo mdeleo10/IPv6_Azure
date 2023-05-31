@@ -61,8 +61,8 @@ Creating a dual-stacked VM - Note that *INTERNAL* IPv6 NIC address is address-tr
 
 
 ## Platform as a Service (PaaS)
-| Service  | Supported | Reference |
-| ------------- | ------------- | ------------- | 
+| Service  | Supported | Reference | Notes |
+| ------------- | ------------- | ------------- | ------------- | 
 | Azure Active Directory | Yes | See https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support |
 | Azure DNS - Azure DNS support for IPv6 (AAAA) records, no inverse resolution* | | | Forward DNS for IPv6 is supported for Azure public DNS. Reverse DNS isn't supporte | 
 | AKS | Yes with limitations | [https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ipv6-overview](https://learn.microsoft.com/en-us/azure/aks/configure-kubenet-dual-stack?tabs=azure-cli%2Ckubectl) | See page for more details |
@@ -71,8 +71,11 @@ Creating a dual-stacked VM - Note that *INTERNAL* IPv6 NIC address is address-tr
 
 ## Software as a Service (SaaS)
 
-Microsoft Exchange Online (supports IPv6)
-Microsoft SharePoint Online (Can be enabled with IPv6 with a support request)
-Microsoft Teams (Only supports IPv4)
-https://learn.microsoft.com/en-us/microsoft-365/enterprise/ipv6-support?view=o365-worldwide
+| Service  | Supported | Reference | Notes |
+| ------------- | ------------- | ------------- | ------------- | 
+| Microsoft Azure Active Directory | Partial |  https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/ipv6-coming-to-azure-ad/ba-p/2967451 | |
+| Microsoft Exchange Online (supports IPv6) | Yes | https://learn.microsoft.com/en-us/microsoft-365/enterprise/ipv6-support?view=o365-worldwide |  |
+| Microsoft SharePoint Online (Can be enabled with IPv6 with a support request) | | | 
+| Microsoft Teams (Only supports IPv4) | | | 
+
 
