@@ -73,7 +73,7 @@ Creating a dual-stacked VM - Note that *INTERNAL* IPv6 NIC address is address-tr
 
 | Service  | Supported | Reference | Notes |
 | ------------- | ------------- | ------------- | ------------- | 
-| Microsoft Azure Active Directory | Phased approach |  https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/ipv6-coming-to-azure-ad/ba-p/2967451 | |
+| Microsoft Azure Active Directory | Yes |  https://learn.microsoft.com/en-us/troubleshoot/azure/active-directory/azure-ad-ipv6-support | |
 | Microsoft Exchange Online (supports IPv6) | Yes | https://learn.microsoft.com/en-us/microsoft-365/enterprise/ipv6-support?view=o365-worldwide |  |
 | Microsoft SharePoint Online (Can be enabled with IPv6 with a support request) | | | 
 | Microsoft Teams (Only supports IPv4) | | | 
