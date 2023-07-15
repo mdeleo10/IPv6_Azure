@@ -13,6 +13,10 @@ In short, the AZ CLI IPv6 capable
 * AZ CLI is written in python and is dependant on python support, but python does support IPv6
 * AZ Cli interracts with different URLS and will depend on their enablement - see [Azure CLI endpoints for proxy bypass](https://learn.microsoft.com/en-us/cli/azure/azure-cli-endpoints?tabs=azure-cloud)
 
+## Is the AZ Powershell IPv6 capable
+Documentation needs to be research more as well as testing.
+See https://learn.microsoft.com/en-us/powershell/azure/az-powershell-proxy?view=azps-10.1.0
+
 ## Infrastructure (IaaS)
 
 | Service  | Supported | Reference | Notes | 
