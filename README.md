@@ -8,7 +8,10 @@ There's **no charge** to use Public IPv6 Addresses or Public IPv6 Prefixes. Asso
 ## Is the Azure Portal Dual Stacked?
 Yes, the https://portal.azure.com site is dual-stacked, https://portal.azure.us is not. But the Azure cli doesn't seem to support IPv6. Azure Powershell to be confirmed.
 
- 
+## Is the AZ CLI IPv6 capable
+In short, the AZ CLI IPv6 capable
+* AZ CLI is written in python and is dependant on python support, but python does support IPv6
+* AZ Cli interracts with different URLS and will depend on their enablement - see [Azure CLI endpoints for proxy bypass](https://learn.microsoft.com/en-us/cli/azure/azure-cli-endpoints?tabs=azure-cloud)
 
 ## Infrastructure (IaaS)
 
